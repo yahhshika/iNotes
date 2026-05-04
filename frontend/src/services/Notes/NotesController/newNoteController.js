@@ -18,7 +18,7 @@ export let onSubmitHandler = async(event, addNote, setNewNote,setNotes,newNote,n
         }
         event.target.classList.add('was-validated');
         if(!event.target.checkValidity()){return;}
-        let response = await fetch("http://localhost:5000/notes/", {
+        let response = await fetch(`${import.meta.env.VITE_BASE_URL}/notes/`, {
             method:"POST",
             body:JSON.stringify({
                 note:{

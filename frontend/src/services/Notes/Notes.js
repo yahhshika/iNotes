@@ -1,7 +1,7 @@
 export async function deleteNote(setNotes, _id){
     try{
 
-        let response = await fetch(`http://localhost:5000/notes/${_id}`,{
+        let response = await fetch(`${import.meta.env.VITE_BASE_URL}/notes/${_id}`,{
             method:"DELETE",
             credentials:"include"
         })
@@ -45,7 +45,7 @@ export function addNote(setNotes, newNote){
 export async function fetchAllNotes(setNotes){
     try{
 
-        let response = await fetch("http://localhost:5000/notes/", {
+        let response = await fetch(`${import.meta.env.VITE_BASE_URL}/notes/`, {
             method:"get",
             credentials:'include'
         });

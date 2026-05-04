@@ -1,3 +1,4 @@
+
 export let onChangeHandlerEditNotes = (event, setCurrValues)=>{
     try{
 
@@ -19,7 +20,7 @@ export let onSubmitHandlerEditNotes = async(event,editNote, ref1,setNotes,note,_
         event.target.classList.add('was-validated');
         if(!event.target.checkValidity()){return;}
     
-        let response = await fetch(`http://localhost:5000/notes/${_id}`,{
+        let response = await fetch(`${import.meta.env.VITE_BASE_URL}/notes/${_id}`,{
             method:"PUT",
             headers:{
                 "content-type":"application/json",

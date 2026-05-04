@@ -8,7 +8,7 @@ export let onSubmitHandlerSignUp = async(event, setUser, credentials,  setCreden
         }
         event.target.classList.add('was-validated');
         if(!event.target.checkValidity()){return;}
-        let res = await fetch("http://localhost:5000/auth/signup",{
+        let res = await fetch(`${import.meta.env.VITE_BASE_URL}/auth/signup`,{
             body: JSON.stringify({
                 user: credentials
             }),
@@ -32,7 +32,7 @@ export let onSubmitHandlerSignUp = async(event, setUser, credentials,  setCreden
 export let logOut = async(setUser)=>{
     try{
 
-        let res = await fetch("http://localhost:5000/auth/logout",{
+        let res = await fetch(`${import.meta.env.VITE_BASE_URL}/auth/logout`,{
             method:"get",
             credentials:"include"
         });
@@ -55,7 +55,7 @@ export let onSubmitHandlerLogin = async(event, setUser, credentials, setCredenti
         }
         event.target.classList.add('was-validated');
         if(!event.target.checkValidity()){return;}
-        let res = await fetch("http://localhost:5000/auth/login",{
+        let res = await fetch(`${import.meta.env.VITE_BASE_URL}/auth/login`,{
             body: JSON.stringify({
                 user: credentials
             }),
@@ -79,7 +79,7 @@ export let onSubmitHandlerLogin = async(event, setUser, credentials, setCredenti
 export let authenticate = async(setUser)=>{
     try{
 
-        let res = await fetch("http://localhost:5000/auth/authenticate",{
+        let res = await fetch(`${import.meta.env.VITE_BASE_URL}/auth/authenticate`,{
             method:"get",
             credentials:"include",
         });

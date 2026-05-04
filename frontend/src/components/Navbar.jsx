@@ -38,8 +38,8 @@ export default function Navbar(){
                     </div>
                     : 
                     <>
-                    <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
-                    <Link className="nav-link" to="/signup">SignUp</Link>
+                    <Link className="nav-link color-white" aria-current="page" to="/login">Login</Link>
+                    <Link className="nav-link color-white" to="/signup">SignUp</Link>
                     </>
                     }
                 </div>
