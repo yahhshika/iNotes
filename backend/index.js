@@ -1,3 +1,5 @@
+require('dotenv').config()
+console.log(process.env.MONGO_URL);
 const express = require("express");
 const app = express();
 const PORT = 5000;
