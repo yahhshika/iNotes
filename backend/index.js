@@ -21,6 +21,9 @@ app.use(cors({
     credentials:true
 }))
 app.use(cookieParser());
+app.get("/",(req,res)=>{
+    res.send("root is working");
+})
 app.use("/auth",userRouter);
 app.use("/notes",notesRouter);
 
