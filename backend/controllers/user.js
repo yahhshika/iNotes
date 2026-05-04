@@ -23,8 +23,9 @@ module.exports.signup = async(req,res,next)=>{
     let token = jwt.sign(data, SECRET);
     res.cookie("token",token,{
         httpOnly: true,
-        sameSite: "lax",
-        secure: false
+        sameSite: "none",
+        secure: true,
+        maxAge: 7 * 24 * 60 * 60 * 1000
     });
     res.send({_id:user._id, name:user.name, email:user.email});
 }
@@ -47,8 +48,9 @@ module.exports.login = async(req,res,next)=>{
     let token = jwt.sign(data, SECRET);
     res.cookie("token",token,{
         httpOnly: true,
-        sameSite: "lax",
-        secure: false
+        sameSite: "none",
+        secure: true,
+        maxAge: 7 * 24 * 60 * 60 * 1000
     });
     res.send({_id:user._id, name:user.name, email:user.email});
 }
@@ -58,8 +60,8 @@ module.exports.logout = (req,res,next)=>{
         console.log("inside logout");
         res.clearCookie("token",{
             httpOnly:true,
-            sameSite:"lax",
-            secure:false
+            sameSite:"none",
+            secure:true
         });
         res.send({message:"logout successfull !"});
     }catch(err){
