@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8A4DFF"/>
+      <stop offset="100%" stop-color="#3A6BFF"/>
+    </linearGradient>
+
+    <!-- Page curl gradient -->
+    <linearGradient id="curlGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#dcdcdc" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="16" y="16" width="224" height="224" rx="40" fill="url(#bgGradient)"/>
+
+  <!-- Left rings -->
+  <g fill="#1E2A78">
+    <rect x="10" y="70" width="40" height="12" rx="6"/>
+    <rect x="10" y="110" width="40" height="12" rx="6"/>
+    <rect x="10" y="150" width="40" height="12" rx="6"/>
+  </g>
+
+  <!-- "i" symbol -->
+  <circle cx="128" cy="85" r="14" fill="white"/>
+  <rect x="116" y="110" width="24" height="70" rx="12" fill="white"/>
+
+  <!-- Page curl -->
+  <path d="M180 180 Q230 180 230 230 Q180 230 180 180 Z" fill="url(#curlGradient)"/>
+</svg>

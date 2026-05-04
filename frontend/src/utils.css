@@ -1,0 +1,39 @@
+/* utils: */
+.rounded-border{
+    border-radius: 10px;
+}
+.border-none{
+    border: 0px;
+}
+.flex-1{
+    flex: 1;
+}
+.font-size-40{
+    font-size: 2rem;
+}
+.font-size-profile{
+    font-size: 1.4rem;
+}
+.text-align-center{
+    text-align: center;
+}
+.dropstart .dropdown-toggle::before {
+    display: none;
+}
+.color-white{
+    color: white !important;
+}
+.color-blue{
+    color: rgb(92, 92, 210);
+}
+.bg-blueish{
+  background: linear-gradient(
+    135deg,
+    #e3edff 0%,
+    #cfe0ff 25%,
+    #b9d2ff 50%,
+    #a3c3ff 75%,
+    #8fb5ff 100%
+  ) !important;
+
+}

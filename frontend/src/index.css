@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0a0f2c 0%,
+    #0f1a4d 25%,
+    #132a6b 50%,
+    #1c3d8c 75%,
+    #274bb5 100%
+  );
+  background-attachment: fixed;
+  color: white;
+}
+.glasmorphism{
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 16px !important;
+    color: #E6ECFF !important;
+}
+.navbar-attached{
+    background: rgba(10, 15, 44, 0.6) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
