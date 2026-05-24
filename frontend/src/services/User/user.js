@@ -19,7 +19,8 @@ export let onSubmitHandlerSignUp = async(event, setUser, credentials,  setCreden
             credentials:"include"
         });
         let resJson = await res.json();
-        console.log(resJson)
+        console.log("resJson");
+        console.log(resJson);
         if(resJson.errors){
             setUser(null);
         }else{
@@ -71,7 +72,7 @@ export let onSubmitHandlerLogin = async(event, setUser, credentials, setCredenti
             credentials:"include"
         });
         let resJson = await res.json();
-        console.log(resJson)
+        console.log(resJson);
         if(resJson?.errors){
             setUser(null);
         }else{
