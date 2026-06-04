@@ -1,18 +1,13 @@
-
+html{
+  background-color: #0c153b;
+}
 body {
   margin: 0;
-  height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #0a0f2c 0%,
-    #0f1a4d 25%,
-    #132a6b 50%,
-    #1c3d8c 75%,
-    #274bb5 100%
-  );
-  background-attachment: fixed;
-  color: white;
-}
+  min-height: 100vh; 
+  background: linear-gradient( 135deg, #0a0f2c 0%, #0f1a4d 25%, #132a6b 50%, #1c3d8c 75%, #274bb5 100% );
+  background-attachment: fixed; 
+  color: white; 
+  }
 .glasmorphism{
     background: rgba(255, 255, 255, 0.08) !important;
     backdrop-filter: blur(10px) !important;
